@@ -1,0 +1,42 @@
+version: 0.2
+
+env:
+  variables:
+    businessID: "${businessID}"
+    name: "${name}"
+    website: "${website}"
+    about: "${about}"
+    address: "${address}"
+    contactNumber: "${contactNumber}"
+    hours: "${hours}"
+    lat: "${lat}"
+    lng: "${lng}"
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - 
+  pre_build:
+    commands:
+      - pwsh ./powershellScripts/firstGit.ps1
+      - git clone https://bitbucket.org/smallneighborhood/${businessID}.com.git
+      - pwsh ./powershellScripts/checkGit.ps1 "${businessID}"
+ 
+  build:
+    commands:
+      - pwsh ./powershellScripts/updateCustomer.ps1 "${businessID}" "${name}" "${website}" "${about}" "${address}" "${contactNumber}" "${hours}" "${lat}" "${lng}"
+      - git add --all
+      - git commit -m 'updated by business website app builder codebuild'
+      - git push --set-upstream origin master
+
+
+artifacts:
+  files:
+    - "**/*"
+  name: "${businessID}"
+  base-directory: ./
+
+cache:
+  paths:
+    - /root/.npm/**/*
