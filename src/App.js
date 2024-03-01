@@ -7,6 +7,7 @@ import ContactPage from "views/ContactPage";
 import Footer from "views/Footer";
 import Helmet from "react-helmet";
 import customer from "customer.json";
+import "assets/scss/material-kit-pro-react.scss?v=1.9.0";
 
 export default function App() {
   let city = customer.address.split(" ").splice(4, 1).join();
