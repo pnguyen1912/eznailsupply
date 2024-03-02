@@ -3,10 +3,7 @@ import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router";
 
-
-
-import App from './App';
-
+import App from "./App";
 
 var hist = createBrowserHistory();
 
@@ -15,6 +12,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/" component={App} />
     </Switch>
+    {/* fdsaf */}
   </Router>,
   document.getElementById("root")
 );
