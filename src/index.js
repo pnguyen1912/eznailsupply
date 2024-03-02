@@ -12,7 +12,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/" component={App} />
     </Switch>
-    {/* fdsaf */}
+    {/* tre */}
   </Router>,
   document.getElementById("root")
 );
