@@ -44,7 +44,7 @@ export default function BlogPostsPage() {
             paddingTop: '5vh',
             margin: 0
           }}
-        > Services
+        > Products & Pricing (Coming Soon)
         <GridContainer>
             <GridItem xs={12} sm={4} md={4} />
             <GridItem xs={12} sm={4} md={4} >
@@ -57,7 +57,7 @@ export default function BlogPostsPage() {
           </GridContainer>
         </h3>
         <GridContainer justify="center">
-          <GridItem xs={12} sm={12} md={6} className={classes.textCenter}>
+          {/* <GridItem xs={12} sm={12} md={6} className={classes.textCenter}>
             <NavPills
               alignCenter
               tabs={data.services.map(item => {
@@ -70,7 +70,7 @@ export default function BlogPostsPage() {
               )}
             />
             <div className={classes.tabSpace} />
-          </GridItem>
+          </GridItem> */}
         </GridContainer>
       </div>
     </div>

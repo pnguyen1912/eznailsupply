@@ -24,7 +24,7 @@ export default function SectionHeaders() {
               classes.mlAuto,
               classes.mrAuto,
             )}>
-              <h2 className={classes.title.mlAuto} style={{ color: data.color.partyword }}>Host A Party?</h2>
+              <h2 className={classes.title.mlAuto} style={{ color: data.color.partyword }}>Become an distrubitor?</h2>
               <h5 style={{ color: data.color.partyword }}>
                 {data.reservation.description}
               </h5>

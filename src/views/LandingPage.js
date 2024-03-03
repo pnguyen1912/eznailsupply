@@ -59,12 +59,22 @@ export default function SectionHeaders() {
               </ListItem>
               <ListItem className={classes.listItem}>
                 <Button
-                  href="#products"
+                  href="#services"
                   className={classes.navLink}
                   color="transparent"
                   size="lg"
                 >
                   <h6 style={{ margin: 0, fontWeight: 600 }}>Products</h6>
+                </Button>
+              </ListItem>
+              <ListItem className={classes.listItem}>
+                <Button
+                  href="#products"
+                  className={classes.navLink}
+                  color="transparent"
+                  size="lg"
+                >
+                  <h6 style={{ margin: 0, fontWeight: 600 }}>Distrubitor</h6>
                 </Button>
               </ListItem>
               <ListItem className={classes.listItem}>
@@ -102,7 +112,15 @@ export default function SectionHeaders() {
                     <h3 style={{ fontFamily: 'Arizonia', marginBottom: 0, color: data.color.welcome }}>Welcome to </h3>
                     <h1 style={{ marginTop: 0, marginBottom: '1vh' }} className={classes.title}>{customer.name}</h1>
                     <h5 style={{ color: data.color.landingword, marginTop: 0 }}>
-                      Where Style is Created
+                    <Button
+                  href="#about"
+                  className={classes.navLink}
+                  size="lg"
+                  color="secondary"
+                  disabled
+                >
+                  <h6 style={{ margin: 0, fontWeight: 600, color: "black" }}>Order Online (Coming Soon)</h6>
+                </Button>
                     </h5>
                     <br />
                     <br />
@@ -143,7 +161,15 @@ export default function SectionHeaders() {
                     <h3 style={{ color: data.color.welcome }}>Welcome to </h3>
                     <h1 style={{ marginTop: 0, marginBottom: '1vh' }} className={classes.title}>{customer.name}</h1>
                     <h5 style={{ color: data.color.landingword, marginTop: 0 }}>
-                      Where Style is Created
+                    <Button
+                  href="#about"
+                  className={classes.navLink}
+                  size="lg"
+                  color="secondary"
+                  disabled
+                >
+                  <h6 style={{ margin: 0, fontWeight: 600, color: "black" }}>Order Online (Coming Soon)</h6>
+                </Button>
                     </h5>
                     <br />
                     <br />
@@ -183,7 +209,15 @@ export default function SectionHeaders() {
                     <h3 style={{ color: data.color.welcome }}>Welcome to </h3>
                     <h1 style={{ marginTop: 0, marginBottom: '1vh' }} className={classes.title}>{customer.name}</h1>
                     <h5 style={{ color: data.color.landingword, marginTop: 0 }}>
-                      Where Style is Created
+                    <Button
+                  href="#about"
+                  className={classes.navLink}
+                  size="lg"
+                  color="secondary"
+                  disabled
+                >
+                  <h6 style={{ margin: 0, fontWeight: 600, color: "black" }}>Order Online (Coming Soon)</h6>
+                </Button>
                     </h5>
                     <br />
                     <br />

@@ -183,16 +183,10 @@ export default function SectionContacts() {
                     className={classes.infoArea2}
                     title="Business Hours"
                     description={
-                      <table>
-                        <tbody>
-                          {JSON.parse(customer.hours).map((i, index) =>
-                            <tr style={{ color: data.color.contactword }}>
-                              <td >{getDayOfWeek(index)}</td>
-                              <td>{(i[0] === '' || i[0] == 0) ? 'Closed' : `${getTimeFormat(i[0])}-${getTimeFormat(i[1])}`}</td>
-                            </tr>
-                          )}
-                        </tbody>
-                      </table>
+                    //
+                    <div>
+                        Coming soon!
+                    </div>
                     }
                     icon={BusinessCenter}
                     iconColor="primary"

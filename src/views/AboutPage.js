@@ -5,7 +5,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.js";
 import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.js";
-
+import img from '../assets/img/logo2.png'
 import data from 'data.json';
 import customer from 'customer.json';
 
@@ -35,7 +35,7 @@ export default function SectionFeatures() {
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
               <div style={{ textAlign: 'center' }}>
-                <img src={data.about.image} width='300vw' alt="nails" />
+                <img src={img} width='500vw' alt="nails" />
               </div>
             </GridItem>
             <GridItem xs={12} sm={6} md={6} className={classes.mlAuto}>
