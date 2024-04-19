@@ -179,14 +179,20 @@ export default function SectionContacts() {
                   />
                 </GridItem>
                 <GridItem xs={12} sm={12} md={12}>
-                  <InfoArea
+                <InfoArea
                     className={classes.infoArea2}
                     title="Business Hours"
                     description={
-                    //
-                    <div>
-                        Coming soon!
-                    </div>
+                      <table>
+                        <tbody>
+                          {JSON.parse(customer.hours).map((i, index) =>
+                            <tr style={{ color: data.color.contactword }}>
+                              <td >{getDayOfWeek(index)}</td>
+                              <td>{(i[0] === '' || i[0] == 0) ? 'Closed' : `${getTimeFormat(i[0])}-${getTimeFormat(i[1])}`}</td>
+                            </tr>
+                          )}
+                        </tbody>
+                      </table>
                     }
                     icon={BusinessCenter}
                     iconColor="primary"
