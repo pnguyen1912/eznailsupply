@@ -119,7 +119,7 @@ export default function SectionHeaders() {
                   color="secondary"
                   disabled
                 >
-                  <h6 style={{ margin: 0, fontWeight: 600, color: "black" }}>Order Online (Coming Soon)</h6>
+                  <h6 style={{ margin: 0, fontWeight: 600, color: "black" }}>We're working on our online ordering, please check out our store</h6>
                 </Button>
                     </h5>
                     <br />
@@ -168,7 +168,7 @@ export default function SectionHeaders() {
                   color="secondary"
                   disabled
                 >
-                  <h6 style={{ margin: 0, fontWeight: 600, color: "black" }}>Order Online (Coming Soon)</h6>
+                  <h6 style={{ margin: 0, fontWeight: 600, color: "black" }}>We're working on our online ordering, please check out our store</h6>
                 </Button>
                     </h5>
                     <br />
@@ -216,7 +216,7 @@ export default function SectionHeaders() {
                   color="secondary"
                   disabled
                 >
-                  <h6 style={{ margin: 0, fontWeight: 600, color: "black" }}>Order Online (Coming Soon)</h6>
+                  <h6 style={{ margin: 0, fontWeight: 600, color: "black" }}>We're working on our online ordering, please check out our store</h6>
                 </Button>
                     </h5>
                     <br />
